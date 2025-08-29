@@ -7,19 +7,21 @@ Build a responsive job listings page using **only Vanilla JavaScript**, **HTML**
 
 ## 📋 Requirements
 
+Salaries in the sample data are expressed in **GBP per year** to align with a UK client while the team is based in Tunisia. Adjust the currency as needed for your locale.
+
 ### Functionality
 - Load job data by **fetching a JSON file** from **this GitHub repository** using a raw file link (e.g. `https://raw.githubusercontent.com/your-org/repo/main/data.json`)
 - Display a list of job cards including fields like:
   - Job role
   - Technologies (array)
   - Experience level
-  - Salary (CTC)
+  - Salary (GBP per year)
   - Company name and location
 - Implement **4 filter controls**:
   - **Role**: Single-select dropdown
   - **Technologies**: Multi-select (checkboxes or similar)
   - **Experience**: Dropdown menu
-  - **CTC**: Range slider (min to max LPA)
+  - **Salary**: Range slider (min to max GBP per year)
 - The job list should **update dynamically** based on selected filters — no page reloads
 - Filter logic should be applied in real time as users change inputs
 
@@ -42,7 +44,7 @@ Build a responsive job listings page using **only Vanilla JavaScript**, **HTML**
     "type": "Full-Time",
     "technologies": ["JavaScript", "HTML", "CSS"],
     "experience": "2-4 years",
-    "ctc": 5
+    "salaryGBP": 45000
   },
   {
     "id": 2,
@@ -52,7 +54,7 @@ Build a responsive job listings page using **only Vanilla JavaScript**, **HTML**
     "type": "Contract",
     "technologies": ["Node.js", "MongoDB"],
     "experience": "3-5 years",
-    "ctc": 8
+    "salaryGBP": 60000
   }
 ]
 ```
